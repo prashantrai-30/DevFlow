@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+    --container-center: true;
+    --container-padding: 2rem;
+    --container-screens-2xl: 1400px;
+    
+    --color-primary-500: #FF7000;
+    --color-primary-100: #FFF1E6;
+  
+    --color-dark-100: #000000;
+    --color-dark-200: #0F1117;
+    --color-dark-300: #151821;
+    --color-dark-400: #212734;
+    --color-dark-500: #101012;
+  
+    --color-light-900: #FFFFFF;
+    --color-light-800: #F4F6F8;
+    --color-light-850: #FDFDFD;
+    --color-light-700: #DCE3F1;
+    --color-light-500: #7B8EC8;
+    --color-light-400: #858EAD;
+    
+    --color-accent-blue: #1DA1F2;
+
+    --font-family-inter: var(--font-inter);
+    --font-family-space-grotesk: var(--font-spaceGrotesk);
+    
+    --shadow-light-100: 0px 12px 20px 0px rgba(184, 184, 184, 0.03), 0px 6px 12px 0px rgba(184, 184, 184, 0.04);
+    --shadow-light-200: 10px 10px 20px 0px rgba(218, 213, 213, 0.10);
+    --shadow-light-300: -10px 10px 20px 0px rgba(218, 213, 213, 0.10);
+    --shadow-dark-100: 0px 2px 10px 0px rgba(46, 52, 56, 0.10);
+    --shadow-dark-200: 2px 0px 20px 0px rgba(39, 36, 36, 0.04);
+
+    --background-image-auth-dark: url('/assets/images/auth-dark.png');
+    --background-image-auth-light: url('/assets/images/auth-light.png');
+
+    --breakpoint-xs: 420px;
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+
+    @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+    }
+
+    @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+    }
+}
